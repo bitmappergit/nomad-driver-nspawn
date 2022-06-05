@@ -26,6 +26,9 @@ const (
 	// pluginName is the name of the plugin
 	pluginName = "nspawn"
 
+  // pluginVersion is the version of the plugin
+  pluginVersion = "v0.9.0"
+
 	// fingerprintPeriod is the interval at which the driver will send fingerprint responses
 	fingerprintPeriod = 30 * time.Second
 
@@ -39,9 +42,6 @@ const (
 )
 
 var (
-	// populated by Makefile
-	pluginVersion string
-
 	// pluginInfo is the response returned for the PluginInfo RPC
 	pluginInfo = &base.PluginInfoResponse{
 		Type:              base.PluginTypeDriver,
